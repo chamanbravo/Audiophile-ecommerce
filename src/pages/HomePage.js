@@ -1,9 +1,12 @@
 import React from 'react'
-import { Hero } from '../components'
+import { Hero, Categories } from '../components'
 
 function Homepage() {
     return (
+        <div className="container">
         <Hero />
+        <Categories />
+        </div>
     )
 }
 

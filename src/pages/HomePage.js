@@ -1,10 +1,9 @@
 import React from 'react'
+import { Hero } from '../components'
 
 function Homepage() {
     return (
-        <div>
-            
-        </div>
+        <Hero />
     )
 }
 

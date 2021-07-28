@@ -1,14 +1,19 @@
 import React from 'react'
 import './Header.scss'
-import logo from '../../assets/shared/desktop/logo.svg'
-import icon_cart from '../../assets/shared/desktop/icon-cart.svg'
-import { links } from '../../utils/constants'
-import { Link } from 'react-router-dom'
+import logo from '../assets/shared/desktop/logo.svg'
+import icon_cart from '../assets/shared/desktop/icon-cart.svg'
+import { links } from '../utils/constants'
+import { Link, useLocation } from 'react-router-dom'
+import Burger from './Burger'
+
 
 function Header() {
+    const location = useLocation();
+
     return (
-        <div className="header-container">
+        <div className={`${location.pathname === '/' ? 'light-bgc' : 'dark-bgc'}` } >
             <div className="header-items">
+                <Burger />
                 <Link to='/'><img src={logo} alt="logo" /></Link>
                 <ul className='nav-ul'>
                     {links.map((link) => {

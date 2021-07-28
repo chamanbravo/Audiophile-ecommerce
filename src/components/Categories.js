@@ -8,9 +8,9 @@ function Categories() {
     return (
         <div className="categories-container">
             {categories.map(category => {
-                const {text, img , url} = category
+                const {id, text, img , url} = category
                 return(
-                    <CategoryCard text={text} img={img} url={url} />
+                    <CategoryCard key={id} text={text} img={img} url={url} />
                 )
             })}
         </div>

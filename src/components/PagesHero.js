@@ -1,9 +1,10 @@
 import React from 'react'
+import './PagesHero.scss'
 
-function PagesHero() {
+function PagesHero({title}) {
     return (
-        <div>
-            
+        <div className="pages_hero">
+            <h1>{title}</h1>
         </div>
     )
 }

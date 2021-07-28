@@ -1,9 +1,10 @@
 import React from 'react'
+import { PagesHero } from '../components'
 
 function EarphonesPage() {
     return (
         <div>
-            <h4>EARPHONES</h4>
+            <PagesHero title='earphones' />
         </div>
     )
 }

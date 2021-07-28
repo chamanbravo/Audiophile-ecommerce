@@ -1,0 +1,13 @@
+@import '../styles/vars';
+
+.pages_hero{
+    background: $clr-black;
+    padding: 5rem 0;
+    h1{
+        color: $clr-white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: $ls-h1;
+        font-size: $fs-h2;
+    }
+}

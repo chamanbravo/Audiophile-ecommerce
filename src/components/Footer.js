@@ -25,9 +25,9 @@ function Footer() {
                 <div className="footer-text">
                     <p className="footer-p">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
                     <div className="social-buttons">
-                        <a href="https://www.fb.com" rel="noreferrer" aria-label="Follow us on FB" target="_blank"><Facebook className="social-icons" /></a>
-                        <a href="https://instagram.com" rel="noreferrer" aria-label="Follow us on Instagram" target="_blank"><Instagram className="social-icons"/></a>
-                        <a href="https://twitter.com" rel="noreferrer" aria-label="Follow us on twitter" target="_blank"><Twitter className="social-icons"/></a>
+                        <a href="https://www.fb.com" rel="noreferrer" aria-label="Follow us on FB" target="_blank"><Facebook  /></a>
+                        <a href="https://instagram.com" rel="noreferrer" aria-label="Follow us on Instagram" target="_blank"><Instagram /></a>
+                        <a href="https://twitter.com" rel="noreferrer" aria-label="Follow us on twitter" target="_blank"><Twitter /></a>
                     </div>
                 </div>
                 <div className="copyright-text">

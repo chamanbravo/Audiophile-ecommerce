@@ -21,6 +21,10 @@
     gap: 1.5rem;    
 }
 
+.social-icons:hover{
+    fill: $clr-primary-1;
+    transition: $general-transition;
+}
 
 .footer-text{
     @include flex(column);

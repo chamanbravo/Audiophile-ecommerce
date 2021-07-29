@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media(max-width: 768px){
+    @media(max-width: 1023px){
         flex-direction: $direction;
         text-align: center;
         gap: 1rem;

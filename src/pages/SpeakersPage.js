@@ -1,10 +1,11 @@
 import React from 'react'
-import { PagesHero } from '../components'
+import { PagesHero, AboutUs } from '../components'
 
 function SpeakersPage() {
     return (
         <div>
             <PagesHero title='speakers' />
+            <AboutUs />
         </div>
     )
 }

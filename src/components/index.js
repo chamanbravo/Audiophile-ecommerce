@@ -2,6 +2,7 @@ import Header from './Header'
 import Hero from './Hero'
 import PagesHero from './PagesHero'
 import Categories from './Categories'
+import AboutUs from './AboutUs'
 import Footer from './Footer'
 
 export {
@@ -9,5 +10,6 @@ export {
     Hero,
     PagesHero,
     Categories,
+    AboutUs,
     Footer,
 }

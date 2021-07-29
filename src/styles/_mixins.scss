@@ -1,0 +1,42 @@
+@mixin flex($direction){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 768px){
+        flex-direction: $direction;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@mixin nav-link{
+    .nav-ul{
+        display: inline-flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    
+    .nav-li{
+        color: $clr-white;
+        &:hover{
+            color: $clr-primary-1;
+            transition: $general-transition;
+        }
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        font-size: $fs-mili;
+        font-weight: 700;
+        letter-spacing: $ls-micro;
+    }
+
+    @media(max-width: 767px){
+        .nav-ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import './App.scss';
-import Header from './components/Header'
+import { Header, Footer } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {  
   EarphonesPage,
@@ -27,6 +27,7 @@ function App() {
           <SpeakersPage />
         </Route>
       </Switch>
+      <Footer />
       </Router>
     </div>
   );

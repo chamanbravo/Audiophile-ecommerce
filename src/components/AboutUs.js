@@ -14,7 +14,7 @@ function AboutUs() {
             </div>
             <img
                 src={`${
-                    width >= 1280
+                    width >= 1024
                     ? image_desktop
                     : width >= 768
                     ? image_tablet

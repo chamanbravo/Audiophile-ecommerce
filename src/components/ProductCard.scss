@@ -1,0 +1,14 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.featured-container{
+    margin: 8rem 1rem;
+    text-align: center;
+    img{
+        width: 100%;
+        border-radius: $radius;
+    }
+}
+
+
+

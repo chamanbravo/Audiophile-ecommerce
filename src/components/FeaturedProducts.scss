@@ -1,0 +1,8 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.featured-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 6rem 6rem;
+}

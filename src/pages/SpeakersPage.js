@@ -1,10 +1,11 @@
 import React from 'react'
-import { PagesHero, AboutUs } from '../components'
+import { PagesHero, Categories, AboutUs } from '../components'
 
 function SpeakersPage() {
     return (
         <div>
             <PagesHero title='speakers' />
+            <Categories />
             <AboutUs />
         </div>
     )

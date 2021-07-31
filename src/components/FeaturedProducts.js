@@ -12,7 +12,7 @@ function FeaturedProducts() {
                 console.log(items.name)
                 const { id } = items;
                 return(
-                    <ProductCard key={id} {...items} link='/product/id' />
+                    <ProductCard key={id} {...items} link={`/product/${id}`} />
                 )
             })}
         </div>

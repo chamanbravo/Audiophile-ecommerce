@@ -1,6 +1,4 @@
-import headphones from '../assets/shared/desktop/image-headphones.png';
-import earphones from '../assets/shared/desktop/image-earphones.png';
-import speakers from '../assets/shared/desktop/image-speakers.png';
+import {image_headphones_desktop, image_earphones_desktop, image_speakers_desktop} from '../assets/index'
 
 export const links = [
   {
@@ -28,19 +26,19 @@ export const links = [
 export const categories = [
   {
     id: 1,
-    img: headphones,
+    img: image_headphones_desktop,
     text: 'headphones',
     url: '/headphones',
   },
   {
     id: 2,
-    img: speakers,
+    img: image_speakers_desktop,
     text: 'speakers',
     url: '/speakers',
   },
   {
     id: 3,
-    img: earphones,
+    img: image_earphones_desktop,
     text: 'earphones',
     url: '/earphones',
   },

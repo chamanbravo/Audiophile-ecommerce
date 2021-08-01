@@ -1,3 +1,5 @@
+import {} from '../../assets/index'
+
 export const data = [
   {
     id: 1,

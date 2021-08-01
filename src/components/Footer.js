@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/shared/desktop/logo.svg'
+import { logo_desktop } from '../assets/index'
 import { links } from '../utils/constants'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-container">
             <div className="footer-items">
                 <div className="footer-nav">
-                    <Link to='/'><img src={logo} alt="logo"/></Link>
+                    <Link to='/'><img src={logo_desktop} alt="logo"/></Link>
                     <ul className="nav-ul">
                         {links.map((link) => {
                             const {id, url, text} = link;

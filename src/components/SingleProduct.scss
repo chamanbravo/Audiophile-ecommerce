@@ -1,0 +1,64 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.single-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.image{
+    width: 80%;
+    height: 80%;
+}
+
+.product-text{
+    text-align: center;
+    max-width: 50ch;
+    .label{
+        color: $clr-primary-1-lt;
+        letter-spacing: $ls-mili;
+    }
+    h1{
+        font-size: $fs-h2;
+        text-transform: uppercase;
+        line-height: $lh-h1;
+    }
+    p{
+        font-weight: 500;
+        font-size: $fs-base;
+        color: $clr-grey-1;
+    }
+}
+
+@media(min-width: 768px){
+    .single-product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .product-text{
+        text-align: left;
+    }
+}
+
+@media(min-width: 1200px){
+    .single-product{
+        gap: 10rem;
+    }
+
+    .product-text{
+        text-align: left;
+    }
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+

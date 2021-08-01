@@ -1,8 +1,8 @@
 import React from 'react'
-import image_mobile from '../assets/shared/mobile/image-best-gear.jpg';
-import image_tablet from '../assets/shared/tablet/image-best-gear.jpg';
-import image_desktop from '../assets/shared/desktop/image-best-gear.jpg';
+import { image_best_gear_mobile, image_best_gear_tablet, image_best_gear_desktop } from '../assets/index'
 import './AboutUs.scss';
+
+//{ image_best_gear_mobile, image_best_gear_tablet, image_best_gear_desktop } 
 
 function AboutUs() {
     const width = window.innerWidth;
@@ -15,10 +15,10 @@ function AboutUs() {
             <img
                 src={`${
                     width >= 1024
-                    ? image_desktop
+                    ? image_best_gear_desktop
                     : width >= 768
-                    ? image_tablet
-                    : image_mobile
+                    ? image_best_gear_tablet
+                    : image_best_gear_mobile
                 }`}
                 alt='best gear'
             />

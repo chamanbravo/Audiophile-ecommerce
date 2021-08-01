@@ -1,7 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import logo from '../assets/shared/desktop/logo.svg'
-import icon_cart from '../assets/shared/desktop/icon-cart.svg'
+import { logo_desktop, icon_cart_desktop } from '../assets/index'
 import { links } from '../utils/constants'
 import { Link, useLocation } from 'react-router-dom'
 import Burger from './Burger'
@@ -14,7 +13,7 @@ function Header() {
         <div className={`${location.pathname === '/' ? 'light-bgc' : 'dark-bgc'}` } >
             <div className="header-items">
                 <Burger />
-                <Link to='/'><img src={logo} alt="logo" /></Link>
+                <Link to='/'><img src={logo_desktop} alt="logo" /></Link>
                 <ul className='nav-ul'>
                     {links.map((link) => {
                         const { id, url, text} = link;
@@ -28,7 +27,7 @@ function Header() {
                     })}
                 </ul>
                 <div className="cart-icon-container">
-                    <img className="cart-icon" src={icon_cart} alt="cart" />
+                    <img className="cart-icon" src={icon_cart_desktop} alt="cart" />
                     <span className="cart-count">0</span>
                 </div>
             </div>            

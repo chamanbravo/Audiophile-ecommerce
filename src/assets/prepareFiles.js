@@ -1,6 +1,6 @@
 const fs = require("fs");
-const dir = "./product-zx9-speaker/tablet/"
-const suffix = "_tablet"
+const dir = "./cart/"
+const suffix = ""
 const files = fs.readdirSync(dir).forEach(x => {
   if(x.includes("png")){
       fs.rename(dir + x, dir + x.split(".png")[0].replace(/[^A-Z0-9]+/ig, "_").toLowerCase()+suffix+'.png', (err) => {

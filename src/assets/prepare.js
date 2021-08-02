@@ -1,5 +1,5 @@
 const fs = require("fs");
-const dir= "./product-zx9-speaker/tablet/"
+const dir= "./cart/"
 const files = fs.readdirSync(dir).filter(x => {
   if(x.includes("png")){
     const ex =

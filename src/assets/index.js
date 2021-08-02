@@ -1,3 +1,10 @@
+//cart
+import image_xx59_headphones from "./cart/image_xx59_headphones.jpg"
+import image_xx99_mark_one_headphones from "./cart/image_xx99_mark_one_headphones.jpg"
+import image_xx99_mark_two_headphones from "./cart/image_xx99_mark_two_headphones.jpg"
+import image_zx7_speaker from "./cart/image_zx7_speaker.jpg"
+import image_zx9_speaker from "./cart/image_zx9_speaker.jpg"
+import yx_1_earphones from "./cart/yx_1_earphones.jpg"
 //shared/desktop
 import icon_arrow_right_desktop from "./shared/desktop/icon_arrow_right_desktop.svg"
 import icon_cart_desktop from "./shared/desktop/icon_cart_desktop.svg"
@@ -122,6 +129,14 @@ import zx9_image_gallery_3_mobile from "./product-zx9-speaker/mobile/image_galle
 import zx9_image_product_mobile from "./product-zx9-speaker/mobile/image_product_mobile.jpg"
 
 export {
+   //cart
+   image_xx59_headphones,
+   image_xx99_mark_one_headphones,
+   image_xx99_mark_two_headphones,
+   image_zx7_speaker,
+   image_zx9_speaker,
+   yx_1_earphones,
+   
    //shared/desktop
    icon_arrow_right_desktop,
    icon_cart_desktop,

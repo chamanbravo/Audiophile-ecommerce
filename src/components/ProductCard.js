@@ -2,7 +2,7 @@ import React from 'react'
 import './ProductCard.scss'
 import Button from './Button'
 
-function ProductCard({name, link, image}) {
+function ProductCard({id, name, image}) {
     const width = window.innerWidth;
     const { mobile, tablet, desktop } = image;
     return (
@@ -14,8 +14,8 @@ function ProductCard({name, link, image}) {
                     ? tablet
                     : mobile
                 }`} alt={name}></img>
-            <h3>{name}</h3>
-            <Button link={link} cName='btn-1' innerText='SEE PRODUCT' />
+            <h2>{name}</h2>
+            <Button link={`/product/${id}`} cName='btn-1' innerText='SEE PRODUCT' />
         </div>
     )
 }

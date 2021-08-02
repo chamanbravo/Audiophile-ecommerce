@@ -5,7 +5,8 @@ import {
   EarphonesPage,
   HeadphonesPage,
   HomePage,
-  SpeakersPage, 
+  SpeakersPage,
+  SingleProductPage, 
 } from './pages'; 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path='/speakers'>
           <SpeakersPage />
+        </Route>
+        <Route exact path='/product/:id'>
+          <SingleProductPage />
         </Route>
       </Switch>
       <Footer />

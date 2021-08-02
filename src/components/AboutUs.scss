@@ -4,12 +4,12 @@
 .aboutus-container{
     @include flex(column-reverse);
     gap: 4rem;
-    margin: 2rem 1rem;
+    margin: 0 1rem 2rem 1rem;
 }
 
 .aboutus-container{
     img{
-        width: 90%;
+        width: 100%;
         border-radius: 20px;
     }
     
@@ -30,9 +30,15 @@
     }
 }
 
+@media(min-width: 768px) {
+    .aboutus-container{
+        margin: 0rem 2rem 4rem 2rem;
+    }
+}
+
 @media(min-width: 1200px) {
     .aboutus-container{
-        margin: 4rem 8rem;
+        margin: 0rem 8rem 4rem 8rem;
         img{
             width: 40%;
         }

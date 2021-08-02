@@ -3,6 +3,7 @@ import HeadphonesPage from './HeadphonesPage';
 import HomePage from './HomePage';
 import SpeakersPage from './SpeakersPage';
 import CheckoutPage from './CheckoutPage';
+import SingleProductPage from './SingleProductPage';
 
 export {
   EarphonesPage,
@@ -10,4 +11,5 @@ export {
   HomePage,
   SpeakersPage,
   CheckoutPage,
+  SingleProductPage,
 };

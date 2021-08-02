@@ -1,7 +1,8 @@
 import React from 'react'
 import './ProductDetails.scss'
+import { formatPrice } from '../utils/helpers'
 
-function ProductDetails({ new:new_label, name, description, image}) {
+function ProductDetails({ new:new_label, name, description, image, price}) {
     const {mobile, tablet, desktop} = image
     const width = window.innerWidth
     return (
@@ -13,6 +14,7 @@ function ProductDetails({ new:new_label, name, description, image}) {
                 {new_label ? <p className="label">NEW PRODUCT</p> : ''}
                 <h1>{name}</h1>
                 <p>{description}</p>
+                <h2 className="price">{formatPrice(price)}</h2>
             </div>
         </div>
     )

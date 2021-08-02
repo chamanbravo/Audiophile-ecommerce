@@ -36,21 +36,11 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1024px) {
     .aboutus-container{
-        margin: 0rem 8rem 4rem 8rem;
+        gap: 5rem;
         img{
             width: 40%;
-        }
-        .aboutus-head{
-            h1{
-                font-size: $fs-h1;
-                line-height: $lh-h1;
-                max-width: 15ch;
-            }
-            p{
-                max-width: 50ch;
-            }
         }
     }
 }
@@ -60,5 +50,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 4rem;
+        margin: 0rem 8rem 4rem 8rem;
+        img{
+            width: 40%;
+        }
+        .aboutus-head{
+            h1{
+                font-size: $fs-h2;
+                line-height: $lh-h2;
+                max-width: 15ch;
+            }
+            p{
+                max-width: 50ch;
+            }
+        }
     }
 }

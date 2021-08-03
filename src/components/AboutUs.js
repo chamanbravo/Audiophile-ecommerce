@@ -2,8 +2,6 @@ import React from 'react'
 import { image_best_gear_mobile, image_best_gear_tablet, image_best_gear_desktop } from '../assets/index'
 import './AboutUs.scss';
 
-//{ image_best_gear_mobile, image_best_gear_tablet, image_best_gear_desktop } 
-
 function AboutUs() {
     const width = window.innerWidth;
     return (

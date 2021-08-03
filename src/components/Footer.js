@@ -4,19 +4,20 @@ import { links } from '../utils/constants'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 import { Facebook, Instagram, Twitter } from './logos'
+import { scrollToTop } from '../utils/helpers'
 
 function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-items">
                 <div className="footer-nav">
-                    <Link to='/'><img src={logo_desktop} alt="logo"/></Link>
+                    <Link to='/' onClick={ scrollToTop }><img src={logo_desktop} alt="logo"/></Link>
                     <ul className="nav-ul">
                         {links.map((link) => {
                             const {id, url, text} = link;
                             return(
                                 <li key={id} className="nav-li">
-                                    <Link className="nav-link" to={url}>{text}</Link>
+                                    <Link className="nav-link" to={url} onClick={scrollToTop}>{text}</Link>
                                 </li>
                             )
                         })}

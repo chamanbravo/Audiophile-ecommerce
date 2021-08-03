@@ -1,0 +1,23 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.suggested-container{
+    margin-top: 8rem;
+    @include product-container();
+    text-align: center;
+    h1{
+        margin-bottom: 2rem;
+    }
+}
+
+.suggestions{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 6rem 6rem;
+}
+
+@media(min-width: 1200px){
+    .suggested-container{
+        margin: 8rem 8rem;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductDetails, Categories, AboutUs } from '../components'
+import { ProductDetails, ProductFeatures, ProductGallery, SuggestedProduct, Categories, AboutUs } from '../components'
 import { data } from '../context/mockData/data'
 import { withRouter } from 'react-router-dom'
 
@@ -8,6 +8,9 @@ function SingleProductPage(id) {
     return (
         <div>
             <ProductDetails {...item}/>
+            <ProductFeatures {...item} />
+            <ProductGallery {...item} />
+            <SuggestedProduct {...item} />
             <Categories />
             <AboutUs />
         </div>

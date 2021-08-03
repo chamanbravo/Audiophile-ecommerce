@@ -3,16 +3,12 @@
 
 .aboutus-container{
     @include flex(column-reverse);
+    @include container();
     gap: 4rem;
-    margin: 0 1rem 2rem 1rem;
-}
-
-.aboutus-container{
     img{
         width: 100%;
         border-radius: 20px;
     }
-    
 }
 
 .aboutus-head{
@@ -25,14 +21,10 @@
         color: $clr-primary-1;
     }
     p{
+        font-weight: 500;
+        font-size: $fs-h6;
         color: $clr-grey-1;
-        font-size: $fs-base;
-    }
-}
-
-@media(min-width: 768px) {
-    .aboutus-container{
-        margin: 0rem 2rem 4rem 2rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -51,7 +43,6 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 4rem;
-        margin: 0rem 8rem 4rem 8rem;
         img{
             width: 40%;
         }

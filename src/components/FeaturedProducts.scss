@@ -2,20 +2,14 @@
 @import '../styles/vars';
 
 .featured-container{
+    @include container();
+    h1{
+        margin-bottom: 4rem;
+    }
+}
+
+.featured-products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 6rem 6rem;
-    margin: 0 1rem 8rem 1rem;
-}
-
-@media(min-width: 768px){
-    .featured-container{
-        margin: 0 2rem 8rem 2rem;
-    }
-}
-
-@media(min-width: 1200px){
-    .featured-container{
-        margin: 0 8rem 8rem 8rem;
-    }
 }

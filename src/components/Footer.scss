@@ -35,10 +35,16 @@
 }
 
 .footer-p{
-    color: $clr-grey-1;
+    font-size: $fs-h6;
     font-weight: 500;
-    font-size: $fs-base;
+    color: $clr-grey-1;
     text-align: center;
+}
+
+@media(min-width: 1024px){
+    .footer-p{
+        text-align: left;
+    }
 }
 
 @media(min-width: 1200px){

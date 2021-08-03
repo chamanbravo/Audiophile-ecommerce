@@ -2,7 +2,7 @@
 @import '../styles/vars';
 
 .features-container{
-    @include product-container();
+    @include container();
     .text1{
         margin: 2rem 0;
     }

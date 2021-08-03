@@ -41,7 +41,7 @@
     }
 }
 
-@mixin product-container{
+@mixin container{
     margin: 4rem 1rem;
     @media(min-width: 768px){
         margin: 4rem 2rem;

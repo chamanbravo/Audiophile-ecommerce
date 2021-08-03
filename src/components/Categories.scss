@@ -1,5 +1,8 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
 .categories-container{
-    margin: 0 1rem;
+    @include container();
 }
 
 @media(min-width: 768px){

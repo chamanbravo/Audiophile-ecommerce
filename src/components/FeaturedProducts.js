@@ -8,13 +8,18 @@ function FeaturedProducts() {
     
     return (
         <div className="featured-container">
-            {FeaturedList.map(items => {
-                console.log(items.name)
-                const { id } = items;
-                return(
-                    <ProductCard key={id} {...items} link={`/product/${id}`} />
-                )
-            })}
+            <div>
+                <h1>RECOMMENDED</h1>
+            </div>
+            <div className="featured-products">
+                {FeaturedList.map(items => {
+                    console.log(items.name)
+                    const { id } = items;
+                    return(
+                        <ProductCard key={id} {...items} link={`/product/${id}`} />
+                    )
+                })}
+            </div>
         </div>
     )
 }

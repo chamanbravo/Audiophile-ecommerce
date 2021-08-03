@@ -2,7 +2,7 @@
 @import '../styles/vars';
 
 .product-gallery{
-    @include product-container();
+    @include container();
     img{
         width: 100%;
         height: 100%;

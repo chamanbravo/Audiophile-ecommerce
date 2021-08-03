@@ -2,5 +2,5 @@
 @import '../styles/vars';
 
 .earphones-container{
-    @include product-container();
+    @include container();
 }

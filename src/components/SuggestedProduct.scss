@@ -3,7 +3,7 @@
 
 .suggested-container{
     margin-top: 8rem;
-    @include product-container();
+    @include container();
     text-align: center;
     h1{
         margin-bottom: 2rem;

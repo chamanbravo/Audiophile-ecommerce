@@ -12,7 +12,7 @@
 
 .suggestions{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: 6rem 6rem;
 }
 

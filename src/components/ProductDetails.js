@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductDetails.scss'
 import { formatPrice } from '../utils/helpers'
+import AddToCartBtn from './AddToCartBtn'
 
 function ProductDetails({ new:new_label, name, description, image, price}) {
     const {mobile, tablet, desktop} = image
@@ -15,6 +16,7 @@ function ProductDetails({ new:new_label, name, description, image, price}) {
                 <h1>{name}</h1>
                 <p>{description}</p>
                 <h2 className="price">{formatPrice(price)}</h2>
+                <AddToCartBtn />
             </div>
         </div>
     )

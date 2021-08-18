@@ -1,0 +1,27 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.cartbtn-container{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.counter{
+    background: $clr-base;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    gap: 1rem;  
+    margin-top: 3rem;
+    span{
+        font-size: $fs-h6;
+        font-weight: 600;
+        cursor: pointer;
+        width: 1rem;
+    }
+    .count{
+        &:hover{
+            color: $clr-primary-1;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../styles/vars";
+
+.cart {
+  background: $clr-white;
+  border-radius: $radius;
+  padding: 2rem 2rem;
+  position: absolute;
+  z-index: 999;
+  top: 5rem;
+  right: 0;
+  width: 35ch;
+  .btn {
+    display: block;
+    text-align: center;
+  }
+}
+
+.cart-header,
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-list {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.cart-total {
+  margin-bottom: -2rem;
+}

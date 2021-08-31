@@ -1,14 +1,14 @@
-@import '../styles/mixins';
-@import '../styles/vars';
+@import "../styles/mixins";
+@import "../styles/vars";
 
-.categories-container{
-    @include container();
+.categories-container {
+  @include container();
 }
 
-@media(min-width: 768px){
-    .categories-container{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        gap: 4rem;
-    }
+@media (min-width: 768px) {
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 4rem;
+  }
 }

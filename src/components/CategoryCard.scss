@@ -1,44 +1,50 @@
-@import '../styles/vars';
+@import "../styles/vars";
 
-.card-container{
-    position: relative;
-    text-align: center;
+.card-container {
+  position: relative;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .card-container {
     margin-top: 4rem;
+  }
 }
 
-.card{
-    background: $clr-base;
-    padding: 7rem 2rem 1rem 2rem;
-    border-radius: 5%;
+.card {
+  background: $clr-base;
+  padding: 7rem 2rem 1rem 2rem;
+  border-radius: 5%;
 
-    .card-title{
-        font-size: $fs-h6;
-        letter-spacing: $ls-h6;
-        margin-bottom: 1rem;
+  .card-title {
+    font-size: $fs-h6;
+    letter-spacing: $ls-h6;
+    margin-bottom: 1rem;
+  }
+
+  .shop-btn {
+    font-size: $fs-base;
+    font-weight: 700;
+    color: $clr-grey-1;
+    transition: $general-transition;
+    position: relative;
+
+    &:hover {
+      color: $clr-primary-1;
     }
 
-    .shop-btn{
-        font-size: $fs-base;
-        font-weight: 700;
-        color: $clr-grey-1;
-        transition: $general-transition;
-        position: relative;
-
-        &:hover{
-            color: $clr-primary-1;
-        }
-
-        &::after{
-            content: url('../assets/shared/desktop/icon_arrow_right_desktop.svg');
-            margin-left: 0.5rem;
-        }
+    &::after {
+      content: url("../assets/shared/desktop/icon_arrow_right_desktop.svg");
+      margin-left: 0.5rem;
     }
+  }
 }
 
-.product-img{
-    width: 12rem;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.product-img {
+  width: 12rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

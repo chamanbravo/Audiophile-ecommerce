@@ -1,39 +1,45 @@
-@import '../styles/vars';
+@import "../styles/vars";
 
-.btn-container{
-    margin-top: 3rem;
+.btn-container {
+  margin-top: 3rem;
 }
 
-.btn{
-    padding: 1rem 2rem;
-    font-size: $fs-base;
-    font-weight: 700;
-    letter-spacing: $ls-micro;
-    transition: $general-transition;
+.btn {
+  padding: 1rem 1rem;
+  font-size: $fs-base;
+  font-weight: 700;
+  letter-spacing: $ls-micro;
+  transition: $general-transition;
 }
 
-.btn-1{
+.btn-1 {
+  color: $clr-white;
+  background: $clr-primary-1;
+  &:hover {
+    background: $clr-primary-1-lt;
+  }
+}
+
+.btn-2 {
+  background: $clr-black;
+  color: $clr-white;
+  &:hover {
+    background: $clr-grey-2;
+  }
+}
+
+.btn-3 {
+  background: transparent;
+  color: $clr-black;
+  outline: 1px solid $clr-black;
+  &:hover {
     color: $clr-white;
-    background: $clr-primary-1;
-    &:hover{
-        background: $clr-primary-1-lt;
-    }
-}
-
-.btn-2{
     background: $clr-black;
-    color: $clr-white;
-    &:hover{
-        background: $clr-grey-2;
-    }
+  }
 }
 
-.btn-3{
-    background: transparent;
-    color: $clr-black;
-    outline: 1px solid $clr-black;
-    &:hover{
-        color: $clr-white;
-        background: $clr-black;
-    }
+@media (min-width: 500px) {
+  .btn {
+    padding: 1rem 2rem;
+  }
 }

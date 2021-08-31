@@ -1,0 +1,16 @@
+@import "../styles/mixins";
+@import "../styles/vars";
+
+.sidebar {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: $clr-white;
+  color: $clr-black;
+}
+
+.sidebar-closed {
+  display: none;
+}

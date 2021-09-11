@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AddToCartBtn.scss";
-import Button from "./Button";
-function AddToCartBtn() {
-  const [count, setCount] = useState(0);
+import "./Button.scss";
+import { CartState } from "../context/Context";
+
+function AddToCartBtn({ prodId }) {
+  const { cart, setCart, count, setCount } = CartState();
 
   function increase() {
     setCount(count + 1);
   }
 
   function decrease() {
-    count === 0 ? setCount(0) : setCount(count - 1);
+    count === 1 ? setCount(1) : setCount(count - 1);
   }
+
+  const addToCart = () => {
+    const prod = cart.find((i) => i.id === prodId);
+    prod ? (prod.qty = count) : setCart([...cart, { id: prodId, qty: count }]);
+  };
+  console.log(cart);
 
   return (
     <div className="cartbtn-container">
@@ -23,7 +31,9 @@ function AddToCartBtn() {
           +
         </span>
       </div>
-      <Button cName="btn-1" innerText="ADD TO CART" />
+      <button className="btn btn-1" onClick={addToCart}>
+        ADD TO CART
+      </button>
     </div>
   );
 }

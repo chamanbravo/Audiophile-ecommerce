@@ -12,13 +12,26 @@
   .btn {
     display: block;
     text-align: center;
+    margin-top: 3rem;
   }
+}
+
+.close-cart {
+  display: none;
 }
 
 .cart-header,
 .cart-total {
   display: flex;
   justify-content: space-between;
+}
+
+.remove-btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .cart-list {

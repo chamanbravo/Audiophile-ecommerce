@@ -1,22 +1,33 @@
 import React from "react";
-import Button from "./Button";
 import "./ShoppingCart.scss";
+import "./Button.scss";
+import { Link } from "react-router-dom";
+import { CartState } from "../context/Context";
 
-function ShoppingCart() {
+function ShoppingCart({ cName }) {
+  const { cart, setCart } = CartState();
   return (
-    <div className="cart">
+    <div className={cName}>
       <div className="cart-header">
-        <h2>CART (0)</h2>
-        <p>Remove All</p>
+        <h2>CART ({cart.length})</h2>
+        <button className="remove-btn" onClick={() => setCart([])}>
+          Remove All
+        </button>
       </div>
       <div className="cart-list">
-        <h2>YOUR CART IS EMPTY</h2>
+        {cart.length !== 0 ? (
+          <h2>There are items</h2>
+        ) : (
+          <h2>YOUR CART IS EMPTY</h2>
+        )}
       </div>
       <div className="cart-total">
         <p>TOTAL</p>
         <h3>$0.00</h3>
       </div>
-      <Button cName="btn-1" link="/" innerText="FILL IT" />
+      <Link to={cart.length !== 0 ? "/" : "/"} className="btn btn-1">
+        {cart.length !== 0 ? "CHECKOUT" : "FILL IT"}
+      </Link>
     </div>
   );
 }

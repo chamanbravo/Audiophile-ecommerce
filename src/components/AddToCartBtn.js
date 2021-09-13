@@ -3,7 +3,7 @@ import "./AddToCartBtn.scss";
 import "./Button.scss";
 import { CartState } from "../context/Context";
 
-function AddToCartBtn({ prodId }) {
+function AddToCartBtn({ id, name, slug, price, cartImg }) {
   const { cart, setCart, count, setCount } = CartState();
 
   function increase() {
@@ -15,8 +15,21 @@ function AddToCartBtn({ prodId }) {
   }
 
   const addToCart = () => {
-    const prod = cart.find((i) => i.id === prodId);
-    prod ? (prod.qty = count) : setCart([...cart, { id: prodId, qty: count }]);
+    const prod = cart.find((i) => i.id === id);
+    prod
+      ? (prod.qty = count)
+      : setCart([
+          ...cart,
+          {
+            id: id,
+            slug: slug,
+            name: name,
+            price: price,
+            img: cartImg,
+            qty: count,
+          },
+        ]);
+    setCount(1);
   };
   console.log(cart);
 

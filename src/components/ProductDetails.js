@@ -7,9 +7,11 @@ function ProductDetails({
   id,
   new: new_label,
   name,
+  slug,
   description,
   image,
   price,
+  cartImage,
 }) {
   const { mobile, tablet, desktop } = image;
   const width = window.innerWidth;
@@ -27,7 +29,13 @@ function ProductDetails({
         <h1>{name}</h1>
         <p>{description}</p>
         <h2 className="price">{formatPrice(price)}</h2>
-        <AddToCartBtn prodId={id} />
+        <AddToCartBtn
+          id={id}
+          slug={slug}
+          name={name}
+          price={price}
+          cartImg={cartImage}
+        />
       </div>
     </div>
   );

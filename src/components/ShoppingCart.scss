@@ -1,3 +1,4 @@
+@import "../styles/mixins";
 @import "../styles/vars";
 
 .cart {
@@ -8,7 +9,7 @@
   z-index: 999;
   top: 5rem;
   right: 0;
-  width: 35ch;
+  width: 40ch;
   .btn {
     display: block;
     text-align: center;
@@ -35,6 +36,24 @@
 }
 
 .cart-list {
+  margin: 2rem 0;
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    align-items: center;
+  }
+  img {
+    width: 4rem;
+  }
+  p {
+    font-weight: 500;
+    color: $clr-grey-1;
+  }
+}
+
+.empty-cart {
   margin: 4rem 0;
   text-align: center;
 }

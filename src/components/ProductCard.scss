@@ -1,15 +1,15 @@
-@import '../styles/mixins';
-@import '../styles/vars';
+@import "../styles/mixins";
+@import "../styles/vars";
 
-.Product-Card{
-    text-align: center;
-    img{
-        width: 100%;
-        border-radius: $radius;
-    }
-    h2{
-        font-size: 1.3rem;
-        margin-top: 2rem;
-        line-height: $lh-h2;
-    }
+.Product-Card {
+  text-align: center;
+  img {
+    width: 100%;
+    border-radius: $radius;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: $lh-h2;
+  }
 }

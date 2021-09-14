@@ -1,29 +1,22 @@
 import React from "react";
-import "./ShoppingCart.scss";
-import "./Button.scss";
-import { Link } from "react-router-dom";
+import "./CartSummary.scss";
 import { CartState } from "../context/Context";
 import { formatPrice } from "../utils/helpers";
 
-function ShoppingCart({ cName }) {
-  const { cart, setCart } = CartState();
+function CartSummary() {
+  const { cart } = CartState();
 
+  let totalPrice = 0;
   let itemsPrice = 0;
   const calcPrice = () => {
     for (let i = 0; i < cart.length; i++) {
       itemsPrice += cart[i].price * cart[i].qty;
+      totalPrice += itemsPrice + 5000 + (13 / 100) * itemsPrice;
     }
   };
   cart.length >= 1 && calcPrice();
-
   return (
-    <div className={cName}>
-      <div className="cart-header">
-        <h2>CART ({cart.length})</h2>
-        <button className="remove-btn" onClick={() => setCart([])}>
-          Remove All
-        </button>
-      </div>
+    <div className=" cartSummary">
       <div className="cart-list">
         {cart.length === 0 ? (
           <h2 className="empty-cart">There are no items</h2>
@@ -42,15 +35,27 @@ function ShoppingCart({ cName }) {
           })
         )}
       </div>
-      <div className="cart-total">
-        <p>TOTAL</p>
-        <h3>{formatPrice(itemsPrice)}</h3>
+      <div className="cost">
+        <div className="costCalc">
+          <p>TOTAL</p>
+          <h3>{formatPrice(itemsPrice)}</h3>
+        </div>
+        <div className="costCalc">
+          <p>SHIPPING </p>
+          <h3>$50</h3>
+        </div>
+        <div className="costCalc">
+          <p>VAT </p>
+          <h3>13%</h3>
+        </div>
+        <div className="costCalc grandTotal">
+          <p>GRAND TOTAL</p>
+          <h3>{formatPrice(totalPrice)}</h3>
+        </div>
       </div>
-      <Link to={cart.length !== 0 ? "/checkout" : "/"} className="btn btn-1">
-        {cart.length !== 0 ? "CHECKOUT" : "FILL IT"}
-      </Link>
+      <button className="btn btn-1">CONTINUE & PAY</button>
     </div>
   );
 }
 
-export default ShoppingCart;
+export default CartSummary;

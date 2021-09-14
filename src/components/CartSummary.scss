@@ -1,0 +1,28 @@
+@import "../styles/mixins";
+@import "../styles/vars";
+
+.cartSummary {
+  width: 15rem;
+  background: $clr-white;
+  height: fit-content;
+  padding: 1rem 0.5rem;
+  .cart-list {
+    margin-top: 0;
+  }
+  .costCalc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .grandTotal {
+    margin-top: 1.5rem;
+    h3 {
+      color: $clr-primary-1;
+    }
+  }
+  button {
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+}

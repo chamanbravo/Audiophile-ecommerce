@@ -53,7 +53,9 @@ function CartSummary() {
           <h3>{formatPrice(totalPrice)}</h3>
         </div>
       </div>
-      <button className="btn btn-1">CONTINUE & PAY</button>
+      <button className="btn btn-1" type="submit">
+        CONTINUE & PAY
+      </button>
     </div>
   );
 }

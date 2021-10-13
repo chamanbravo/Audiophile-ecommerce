@@ -1,12 +1,12 @@
-import React from 'react'
-import './PagesHero.scss'
+import React from "react";
+import "./PagesHero.scss";
 
-function PagesHero({title}) {
-    return (
-        <div className="pages_hero">
-            <h1>{title}</h1>
-        </div>
-    )
+function PagesHero({ title }) {
+  return (
+    <div className="pages_hero">
+      <h1>{title}</h1>
+    </div>
+  );
 }
 
-export default PagesHero
+export default PagesHero;

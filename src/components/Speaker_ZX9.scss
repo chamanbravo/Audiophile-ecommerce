@@ -1,7 +1,7 @@
-@import '../styles/mixins';
-@import '../styles/vars';
+@import "../styles/mixins";
+@import "../styles/vars";
 
-.speaker-zx9{
+.speaker-zx9 {
   margin-bottom: 2rem;
   position: relative;
   padding: 3.5rem 2.25rem;
@@ -11,7 +11,7 @@
   line-height: $lh-h2;
   text-align: center;
   overflow: hidden;
-  img{
+  img {
     margin-bottom: 2rem;
     position: relative;
     max-width: 10rem;
@@ -19,86 +19,85 @@
 }
 
 @media screen and (min-width: 768px) {
-    .speaker-zx9{
-        img {
-            max-width: 12.5rem;
-            margin-bottom: 4rem;
-        }
+  .speaker-zx9 {
+    img {
+      max-width: 12.5rem;
+      margin-bottom: 4rem;
     }
   }
-  @media screen and (min-width: 1280px) {
-    .speaker-zx9{
-        padding: 8.5rem;
-        img {
-            max-width: 24rem;
-            position: absolute;
-            bottom: -4.75rem;
-            left: 8.75rem;
-        }
-    }
 }
-
-.speaker-zx9{
-    .inner-text{
-
-     h3 {
-        position: relative;
-        margin: 0 auto;
-        font-size: 2.25rem;
-        font-weight: bold;
-        letter-spacing: $ls-h6;
-        margin-bottom: 1.5rem;
-        max-width: 70%;
-        }
-      p {
-        position: relative;
-        opacity: 0.75;
-        line-height: $lh-mili;
-        margin-bottom: 1.5rem;
-      }
-      a {
-        position: relative;
-        background-color: $clr-black;
-        color: $clr-white;
-        &:hover {
-          background-color: $clr-grey-2;
-          outline-color: $clr-grey-2;
-        }
-      }
-      @media screen and (min-width: 768px) {
-        h3 {
-          max-width: 45%;
-          font-size: $fs-h1;
-          letter-spacing: $ls-h1;
-          line-height: $lh-h1;
-        }
-        p {
-          margin: 0 auto;
-          margin-bottom: 2.25rem;
-          max-width: 45%;
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        margin-left: auto;
-        max-width: 38%;
-        text-align: left;
-        h3 {
-          max-width: 100%;
-          font-size: $fs-h1;
-          letter-spacing: $ls-h1;
-          line-height: $lh-h1;
-        }
-        p {
-          margin: 0 auto;
-          margin-bottom: 2.25rem;
-          max-width: 100%;
-        }
+@media screen and (min-width: 1200px) {
+  .speaker-zx9 {
+    padding: 8.5rem;
+    img {
+      max-width: 24rem;
+      position: absolute;
+      bottom: -4.75rem;
+      left: 6.75rem;
     }
   }
 }
 
 .speaker-zx9 {
-  background-image: url('../assets/home/desktop/pattern-circles.svg');
+  .inner-text {
+    h3 {
+      position: relative;
+      margin: 0 auto;
+      font-size: 2.25rem;
+      font-weight: bold;
+      letter-spacing: $ls-h6;
+      margin-bottom: 1.5rem;
+      max-width: 70%;
+    }
+    p {
+      position: relative;
+      opacity: 0.75;
+      line-height: $lh-mili;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      position: relative;
+      background-color: $clr-black;
+      color: $clr-white;
+      &:hover {
+        background-color: $clr-grey-2;
+        outline-color: $clr-grey-2;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      h3 {
+        max-width: 45%;
+        font-size: $fs-h1;
+        letter-spacing: $ls-h1;
+        line-height: $lh-h1;
+      }
+      p {
+        margin: 0 auto;
+        margin-bottom: 2.25rem;
+        max-width: 45%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      max-width: 38%;
+      text-align: left;
+      h3 {
+        max-width: 100%;
+        font-size: $fs-h1;
+        letter-spacing: $ls-h1;
+        line-height: $lh-h1;
+      }
+      p {
+        margin: 0 auto;
+        margin-bottom: 2.25rem;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.speaker-zx9 {
+  background-image: url("../assets/home/desktop/pattern-circles.svg");
   background-position: center -8rem;
   background-repeat: no-repeat;
   background-size: 170%;
@@ -109,7 +108,7 @@
     background-size: 130%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .speaker-zx9 {
     background-position: -7.75rem -1rem;
     background-size: 82%;

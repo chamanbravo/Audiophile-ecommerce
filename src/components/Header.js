@@ -11,24 +11,26 @@ function Header() {
 
   return (
     <div className={`${location.pathname === "/" ? "light-bgc" : "dark-bgc"}`}>
-      <div className="header-items">
-        <Burger />
-        <Link to="/">
-          <img src={logo_desktop} alt="logo" />
-        </Link>
-        <ul className="nav-ul">
-          {links.map((link) => {
-            const { id, url, text } = link;
-            return (
-              <li key={id} className="nav-li">
-                <Link to={url} className="nav-link">
-                  {text}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        <CartBtn />
+      <div className="container">
+        <div className="header-items">
+          <Burger />
+          <Link to="/">
+            <img src={logo_desktop} alt="logo" />
+          </Link>
+          <ul className="nav-ul">
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id} className="nav-li">
+                  <Link to={url} className="nav-link">
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <CartBtn />
+        </div>
       </div>
     </div>
   );

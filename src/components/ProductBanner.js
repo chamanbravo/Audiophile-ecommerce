@@ -1,5 +1,5 @@
 import React from "react";
-import SpeakerZX9 from "./Speaker_ZX9.js";
+import SpeakerZX9 from "./Speaker_zx9.js";
 import SpeakerZX7 from "./Speaker_ZX7.js";
 import "./ProductBanner.scss";
 

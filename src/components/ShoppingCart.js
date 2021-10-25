@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { CartState } from "../context/Context";
 import { formatPrice } from "../utils/helpers";
 
-function ShoppingCart({ cName }) {
+function ShoppingCart({ modalState }) {
   const { cart, setCart } = CartState();
 
   let itemsPrice = 0;
@@ -17,7 +17,7 @@ function ShoppingCart({ cName }) {
   cart.length >= 1 && calcPrice();
 
   return (
-    <div className={cName}>
+    <div className="cart">
       <div className="cart-header">
         <h2>CART ({cart.length})</h2>
         <button className="remove-btn" onClick={() => setCart([])}>
@@ -46,7 +46,11 @@ function ShoppingCart({ cName }) {
         <p>TOTAL</p>
         <h3>{formatPrice(itemsPrice)}</h3>
       </div>
-      <Link to={cart.length !== 0 ? "/checkout" : "/"} className="btn btn-1">
+      <Link
+        to={cart.length !== 0 ? "/checkout" : "/"}
+        className="btn btn-1"
+        onClick={() => modalState(false)}
+      >
         {cart.length !== 0 ? "CHECKOUT" : "FILL IT"}
       </Link>
     </div>

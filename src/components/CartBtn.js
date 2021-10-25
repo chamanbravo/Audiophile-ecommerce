@@ -16,11 +16,8 @@ function CartBtn() {
         <img className="cart-icon" src={icon_cart_desktop} alt="cart" />
         <span className="cart-count">{cart.length}</span>
       </div>
-      {modal ? (
-        <ShoppingCart cName="cart" />
-      ) : (
-        <ShoppingCart cName="close-cart" />
-      )}
+      {modal && <ShoppingCart modalState={setModal} />}
+      {modal && <div className="closeBg" onClick={handleClick} />}
     </div>
   );
 }

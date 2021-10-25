@@ -2,7 +2,7 @@ import React from "react";
 import { ErrorMessage, useField } from "formik";
 
 function TextField({ label, ...props }) {
-  const [field, meta] = useField(props);
+  const [field] = useField(props);
   return (
     <div className="text-field">
       <label htmlFor={field.name}>{label}</label>

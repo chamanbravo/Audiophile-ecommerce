@@ -53,13 +53,6 @@ function CartCheckout() {
             e_money_pin: "",
           }}
           validationSchema={validate}
-          onSubmit={(values) => {
-            if (values) {
-              alert("order placed");
-            } else {
-              alert("gandu");
-            }
-          }}
         >
           {(formik) => (
             <Form>

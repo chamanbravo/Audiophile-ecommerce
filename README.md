@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://audiophille.netlify.app/]
+- Live Site URL: [https://audiophile--ecommerce.vercel.app]
 
 ## My process
 

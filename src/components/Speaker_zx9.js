@@ -1,10 +1,10 @@
 import React from "react";
-import speaker_mobile from "../assets/home/mobile/image-speaker-zx9.png";
-import speaker_tablet from "../assets/home/tablet/image-speaker-zx9.png";
-import speaker_desktop from "../assets/home/desktop/image-speaker-zx9.png";
 import "./Speaker_ZX9.scss";
 import Button from "./Button";
 import { scrollToTop } from "../utils/helpers";
+import speaker_mobile from "../assets/home/mobile/image-speaker-zx9.png";
+import speaker_tablet from "../assets/home/tablet/image-speaker-zx9.png";
+import speaker_desktop from "../assets/home/desktop/image-speaker-zx9.png";
 
 const Speaker_ZX9 = () => {
   const width = window.innerWidth;
